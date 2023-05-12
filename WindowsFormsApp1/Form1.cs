@@ -19,9 +19,18 @@ namespace WindowsFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 newForm = new Form2();
-            newForm.Show();
-            this.Hide();
+            if (textBox1.Text == "Admin" && textBox2.Text == "admin123")
+            {
+
+                Form2 newForm = new Form2();
+                newForm.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Eroor");
+            }
+
         }
     }
 }
